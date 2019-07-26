@@ -1,0 +1,54 @@
+for connecting common mysql database
+mysql -h192.168.4.253 -uroot -proot -A;
+--------------------------------------------------------------
+basic syntax for executing python
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="root"
+)
+mycursor = mydb.cursor()
+mycursor.execute("SHOW DATABASES")
+
+for x in mycursor:
+  print(x)
+ ----------------------------------------------------------------
+python-mysql study material
+https://www.w3schools.com/python/python_mysql_getstarted.asp
+https://o7planning.org/en/11463/connecting-mysql-database-in-python-using-pymysql#a7878570
+--------------------------------------------------------------------
+For Verifying MySQL Connector/Python installation
+http://www.mysqltutorial.org/getting-started-mysql-python-connector/
+import mysql.connector
+mysql.connector.connect(host='localhost',database='mysql',user='root',password='')
+https://stackoverflow.com/questions/24272223/import-mysql-connector-python
+https://github.com/pandas-dev/pandas/issues/15103
+-------------------------------------------------------------------------------------
+For setting virtual environment
+https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/
+https://gist.github.com/Geoyi/d9fab4f609e9f75941946be45000632b
+source Project_Folder/venv/bin/activate 
+------------------------------------------------------------------------------------------
+To install Pycharm
+https://itsfoss.com/install-pycharm-ubuntu/
+sudo snap install pycharm-community --classic
+To connect to a database in Pycharm
+https://www.jetbrains.com/help/pycharm/connecting-to-a-database.html
+----------------------------------------------------------------------------------
+Annaconda installation
+https://www.anaconda.com/distribution/#linux
+---------------------------------------------------------------
+goLang commands
+https://golang.org/cmd/go/
+-------------------------------------------------------------------
+To locate packages on your disk
+https://askubuntu.com/questions/378558/unable-to-locate-package-while-trying-to-install-packages-with-apt
+add-apt-repository ppa:git-core/ppa # apt update; apt install git
+--------------------------------------------------------------------------
+For installing Git
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt update;
+sudp apt install git
+ 
